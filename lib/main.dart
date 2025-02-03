@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:uhi/screens/auth_path.dart';
+import 'package:uhi/screens/booking_page.dart';
+import 'package:uhi/screens/doctor_details.dart';
+import 'package:uhi/screens/success_booked.dart';
 import 'package:uhi/utils/config.dart';
 import 'main_layout.dart';
 
@@ -47,6 +50,9 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const AuthPage(),
         '/main': (context) => const MainLayout(), // Add `/` to route name
+        'doc_details': (context) => const DoctorDetails(),
+        'booking_page': (context) => BookingPage(),
+        'success_booking': (context) => AppointmentBooked(),
       },
     );
   }
